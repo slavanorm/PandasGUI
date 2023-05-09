@@ -78,8 +78,8 @@ class DataFrameExplorer(QtWidgets.QWidget):
 
         self.splitter.addWidget(self.side_bar)
         self.splitter.addWidget(self.main_window)
-        self.side_bar.addWidget(self.filter_viewer_container)
         self.side_bar.addWidget(Container(self.column_viewer, "Columns"))
+        self.side_bar.addWidget(self.filter_viewer_container)
 
     # Add a dock to the MainWindow widget
     def add_view(self, widget: QtWidgets.QWidget, title: str):
